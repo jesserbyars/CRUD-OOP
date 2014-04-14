@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #171717;
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif; }
+
+#pagewrapper {
+  width: 90%;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+#banner {
+  height: 70px;
+  border-bottom: 2px solid #050505; }
+  #banner #banner-left {
+    height: 100%;
+    float: left;
+    width: 70%;
+    background-color: #888888; }
+    #banner #banner-left h1 {
+      display: none;
+      font-size: 160%;
+      padding: 5px 0 0 5px; }
+  #banner #banner-right {
+    height: 100%;
+    background-color: #888888;
+    width: 30%;
+    float: left; }
+    #banner #banner-right p {
+      font-weight: bold;
+      text-align: right;
+      padding: 8px 5px 0 0;
+      display: none; }
+
+#nav {
+  clear: both;
+  height: auto;
+  background-color: white; }
+  #nav ul {
+    width: 100%; }
+    #nav ul li {
+      display: block;
+      text-align: center; }
+      #nav ul li a {
+        width: 100%;
+        display: block;
+        padding: 5px 0 5px 0;
+        font-size: 120%;
+        line-height: 130%; }
+      #nav ul li a:link, #nav ul li a:visited {
+        text-decoration: none;
+        color: #050505; }
+      #nav ul li a:hover {
+        text-decoration: none;
+        background-color: #050505;
+        color: white; }
+      #nav ul li a:active {
+        text-decoration: none; }
+
+#content {
+  border-top: 2px solid #050505;
+  background-color: #888888;
+  padding: 20px 10px 20px 10px; }
+
+#footer {
+  border-top: 2px solid #050505;
+  background-color: white; }
+  #footer p {
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    text-align: center; }
+
+.tabledisplay {
+  width: 100%; }
+  .tabledisplay th, .tabledisplay td {
+    vertical-align: middle;
+    border: 2px solid #171717;
+    width: 10%;
+    padding: 2px 1px;
+    text-align: center; }
+  .tabledisplay tr:nth-child(even) {
+    background-color: #bbbbbb; }
+  .tabledisplay th {
+    padding: 13px 0px;
+    font-weight: bold;
+    font-size: 1.1em; }
+  .tabledisplay a:link, .tabledisplay a:visited {
+    color: #050505; }
+  .tabledisplay a:hover, .tabledisplay a:active {
+    color: white; }
+  .tabledisplay .sortlink {
+    background-color: #2222aa; }
+    .tabledisplay .sortlink a:link, .tabledisplay .sortlink a:visited {
+      color: #888888;
+      text-decoration: none; }
+    .tabledisplay .sortlink a:hover, .tabledisplay .sortlink a:active {
+      color: white;
+      text-decoration: none; }
+
+#insert_user p, #update_form p {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 10px; }
+#insert_user input, #update_form input {
+  -moz-box-shadow: 0px 8px 6px -6px #050505;
+  -webkit-box-shadow: 0px 8px 6px -6px #050505;
+  box-shadow: 0px 8px 6px -6px #050505;
+  margin-top: 10px;
+  font-size: 1.1em;
+  padding: 2px;
+  display: block; }
+#insert_user .button, #update_form .button {
+  padding: 2px 5px; }
+
+.message, .error, .success {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid #050505;
+  margin-bottom: 14px;
+  color: #050505; }
+
+.error {
+  color: #ce1812; }
+
+.success {
+  color: #00dd00; }
+
+.linkbutton, .confirm, .cancel {
+  display: inline-block;
+  float: left;
+  font-size: 1.1em;
+  padding: 8px 16px;
+  background-color: #171717;
+  color: white;
+  border: 2px solid #050505;
+  margin: 10px 10px 10px 0;
+  -moz-box-shadow: 0px 8px 6px -6px #050505;
+  -webkit-box-shadow: 0px 8px 6px -6px #050505;
+  box-shadow: 0px 8px 6px -6px #050505;
+  text-decoration: none; }
+
+.linkbutton:hover, .confirm:hover, .cancel:hover {
+  color: #050505; }
+
+.linkbutton:after, .confirm:after, .cancel:after {
+  clear: both; }
+
+.confirm {
+  background-color: #00dd00; }
+
+.cancel {
+  background-color: #ce1812; }
+
+.actions {
+  font-size: .9em;
+  padding: 4px 0px; }
